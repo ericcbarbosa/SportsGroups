@@ -75,6 +75,16 @@
                 android:textColor="@color/colorAccentInvert"
                 android:textStyle="bold" />
 
+            <Button
+                android:id="@+id/btn_go_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorAccent"
+                android:text="Cadastrar"
+                android:textColor="@color/colorAccentInvert"
+                android:textStyle="bold" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -36,7 +36,7 @@ public class UserFragment extends Fragment {
     private EditText state;
 
     private Button btnCancel;
-    private Button btnAddRegister ;
+    private Button btnAddRegister;
     private FloatingActionButton btnFloatingRegister;
 
     public UserFragment() {
@@ -99,7 +99,7 @@ public class UserFragment extends Fragment {
                 "SP"
         ));
 
-        adapter = new UserAdapter(getContext(), usersList);
+        adapter = new UserAdapter(getActivity(), usersList);
         recycler.setAdapter(adapter);
 
         btnFloatingRegister.setOnClickListener(new View.OnClickListener() {
@@ -115,7 +115,7 @@ public class UserFragment extends Fragment {
     public void displayDialog() {
         final Dialog dialog = new Dialog(getContext());
 
-        dialog.setTitle("Cadastrar criatura");
+        dialog.setTitle("Cadastrar usuário");
         dialog.setContentView(R.layout.user_register);
         dialog.setCancelable(true);
 

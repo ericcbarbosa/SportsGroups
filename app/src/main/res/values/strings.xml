@@ -46,6 +46,13 @@
     <!-- Group : Actions -->
     <string name="group_remove">Remover grupo</string>
     <string name="group_add">Adicionar grupo</string>
+    <string name="group_cancel">Cancelar</string>
+
+    <!-- User : Titles & Page Descriptions -->
+    <string name="group_title_add">Cadastrar grupo</string>
+    <string name="group_title_edit">Editar dados do grupo</string>
+    <string name="group_description_add">Preencha os dados abaixo para adicionar um novo grupo</string>
+    <string name="group_description_edit">Altere os dados abaixo e clique no botão salvar para alterar os dados do grupo</string>
 
     <!-- Event : Data -->
     <string name="event_out_name">Nome</string>
@@ -74,4 +81,7 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

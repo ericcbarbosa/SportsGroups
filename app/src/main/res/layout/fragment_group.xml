@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.UserFragment">
+    tools:context=".fragment.GroupFragment">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/user_floating_register"
+            android:id="@+id/group_floating_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -23,9 +23,11 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/user_recycler"
+            android:id="@+id/group_recycler"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="260dp"
+            tools:layout_editor_absoluteY="439dp">
 
         </android.support.v7.widget.RecyclerView>
 

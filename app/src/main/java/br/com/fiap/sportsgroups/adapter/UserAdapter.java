@@ -77,7 +77,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserViewHolder>{
         if(userList.remove(user)) {
             Toast.makeText(context,"O usuário " + user.getName() + " foi removido com sucesso", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(context,"Não foi possível remover ao usuário" + user.getName(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(context,"Não foi possível remover o usuário" + user.getName(), Toast.LENGTH_SHORT).show();
         }
 
         this.notifyItemRemoved(position);

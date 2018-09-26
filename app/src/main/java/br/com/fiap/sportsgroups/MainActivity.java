@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import br.com.fiap.sportsgroups.fragment.GroupFragment;
 import br.com.fiap.sportsgroups.fragment.UserFragment;
 
 public class MainActivity extends AppCompatActivity
@@ -27,16 +28,6 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // Floating Button
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
-
         // Menu
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -46,6 +37,8 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, new GroupFragment()).commit();
     }
 
     @Override
@@ -96,7 +89,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_user) {
             getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, new UserFragment()).commit();
         } else if (id == R.id.nav_groups) {
-
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, new GroupFragment()).commit();
         } else if (id == R.id.nav_about) {
 
         } else if (id == R.id.nav_config) {

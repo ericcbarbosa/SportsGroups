@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".fragment.GroupFragment">
 
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/group_listview"></ListView>
+
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -17,19 +22,11 @@
             android:layout_marginBottom="16dp"
             android:layout_marginEnd="16dp"
             android:clickable="true"
+            android:focusable="true"
             android:src="@android:drawable/ic_menu_add"
             app:backgroundTint="@color/colorAccent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/group_recycler"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="260dp"
-            tools:layout_editor_absoluteY="439dp">
-
-        </android.support.v7.widget.RecyclerView>
 
     </android.support.constraint.ConstraintLayout>
 

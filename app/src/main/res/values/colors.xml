@@ -7,7 +7,8 @@
 
 
     <color name="colorPrimary">#ff4545</color>
-    <color name="colorPrimaryDark">#4c4c4c</color>
+    <color name="colorPrimaryInvert">#ffffff</color>
+    <color name="colorPrimaryDark">#9b2626</color>
 
     <color name="colorAccent">#4070ff</color>
     <color name="colorAccentInvert">#ffffff</color>
